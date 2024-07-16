@@ -13,7 +13,7 @@ export type Movie = {
 
 const fetchMovieDetails = async (id: string) => {
   const { data } = await axios.get(
-    `http://www.omdbapi.com/?apikey=${API_KEY}&i=${id}`
+    `https://www.omdbapi.com/?apikey=${API_KEY}&i=${id}`
   );
   return data;
 };
